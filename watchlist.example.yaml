@@ -1,0 +1,32 @@
+# Copy this file to watchlist.yaml and edit it with the cards you want to track.
+#
+# Fields:
+#   name              (required) card name, e.g. "Charizard"
+#   set               (optional) TCG set name, e.g. "Base Set" - narrows the match
+#   number             (optional) card number within the set, e.g. "4"
+#   variant            (optional) which print/finish's TCGPlayer price to use,
+#                      e.g. "holofoil", "normal", "reverseHolofoil",
+#                      "1stEditionHolofoil". If omitted, the most common
+#                      finish available is picked automatically.
+#   min_discount_pct   (optional) override the global --min-discount for this
+#                      card only
+#   query              (optional) override the eBay search text entirely
+#                      (default is "<name> <set>")
+#   max_results        (optional) how many eBay listings to pull per card
+#                      (default 50, eBay max per request is 200)
+
+- name: Charizard
+  set: Base Set
+  number: "4"
+  variant: holofoil
+  min_discount_pct: 25
+
+- name: Umbreon VMAX
+  set: Evolving Skies
+  number: "215"
+
+- name: Pikachu
+  set: Base Set
+  number: "58"
+  variant: normal
+  max_results: 100

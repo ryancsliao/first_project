@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pokedeal"
+version = "0.1.0"
+description = "Find Pokemon card eBay listings priced below TCGPlayer market price"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+    "PyYAML>=6.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+pokedeal = "pokedeal.cli:main"
+
+[tool.setuptools]
+packages = ["pokedeal"]
